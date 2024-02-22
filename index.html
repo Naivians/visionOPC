@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/setup.css" />
+    <link rel="stylesheet" href="css/home.css" />
+
+    <!-- AOS cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- swiper cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <div class="overlay">
+      <h1>Vision International Construction OPC</h1>
+      <p><span>You </span>Envision <span>, We</span> Build</p>
+      <button>Contact us</button>
+    </div>
+    <!-- Slider main container -->
+    <swiper-container
+      class="mySwiper"
+      pagination="true"
+      pagination-clickable="true"
+      navigation="false"
+      space-between="30"
+      centered-slides="true"
+      autoplay-delay="3000"
+      autoplay-disable-on-interaction="false"
+    >
+      <swiper-slide><img src="img/sample.png" alt="" /></swiper-slide>
+      <swiper-slide><img src="img/2.png" alt="" /></swiper-slide>
+      <swiper-slide><img src="img/3.png" alt="" /></swiper-slide>
+      <swiper-slide><img src="img/4.png" alt="" /></swiper-slide>
+      <swiper-slide><img src="img/5.png" alt="" /></swiper-slide>
+    </swiper-container>
+
+    <main>
+      <!-- history -->
+      <div class="custom-container">
+        <div class="history t-and-b-space " data-aos="fade-up">
+          <h2 class="headingSmall secondary">History & Philosophy</h2>
+
+          <h3>VISION INTERNATIONAL CONSTRUCTION OPC</h3></br>
+          <p> is a privately owned company that was established last September 2020. </br> </br>
+            It takes on the role of Importer, Supplier, Trading Business, and Construction Services for small to medium projects and performs project management services to coordinates specialist trade for industrial and commercial projects. </br></br>
+            We also provide design outputs and engineering solutions as value-added services to clients. 
+            </p>
+        </div>
+        
+        <!-- objectives -->
+        <div class="objective t-and-b-space" data-aos="fade-up-right">
+          <div class="objTitle">
+            <h2 class="secondary headingSmall">Our Objective</h2>
+            <p class="max-p-size mbmt">Our  objective is to provide our client with a superb experience when we are chosen to execute our projects. </p>
+            <p>Our emphasis on clear communication and follow through procedures ensures that client’s objective is top priority in the planning and execution of all our process.</p>
+          </div>
+  
+          <div class="objImg " data-aos="fade-up-left">
+            <img src="img/s.jpg" alt="" class="img1">
+            <img src="img/objShape.png" alt="" class="img2">
+          </div>
+        </div>
+      </div>
+    
+    </main>
+    <!-- swiper cdn js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!-- AOS cdn js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  </body>
+</html>
