@@ -28,6 +28,7 @@
         <style>
             main{
                 background-color: #f4f4f4;
+                height: 100vh;
             }
 
             .logos img{
@@ -52,13 +53,50 @@
             a{
                 text-decoration: none;
             }
+
+            nav{
+                background-color: #8b1520;
+            }
+
+            .navbar .collapse a:hover{
+                background-color: #db0c21;
+            }
+
+            iframe{
+                width: 600px;
+                height: 450px;
+            }
+
+            /* responsiveness */
+            /* screen 1200px and up (for bigger screen) */
+            @media only screen and (min-width: 1200px){
+                h1{
+                    font-size: 3rem;
+                }
+
+                main p, main ul li{
+                    font-size: 1.5rem;
+                }
+
+            }
+            @media only screen and (max-width: 600px){
+                h1{
+                    font-size: 2.5rem;
+                }
+            }
+            /* contact page responsive */
+            @media only screen and (max-width: 970px){
+            iframe{
+                width: 100% !important;
+            }
+            }
         </style>
 
     </head>
     <body>
 
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand text-light " href="index.html"><img
                         id="logo" src="img/logo.png" alt></a>
@@ -107,12 +145,13 @@
         </nav>
 
         <main class="main">
-            <div class="container p-5">
+            <div class="container p-5-md">
                 <!-- d-flex align-items-center justify-content-between -->
-                <h1 class="text-center pb-5 ">Get a quote now!</h1>
-                <div class="d-flex align-items-start justify-content-between">
-                    <div class="content-info">
-
+                <h1 class="text-center pb-5 pt-5 secondary">Get a quote
+                    now!</h1>
+                <div
+                    class="d-lg-flex align-items-start justify-content-between">
+                    <div class="content-info p-4">
                         <!-- company name -->
                         <p class="text-secondary">Company name</p>
                         <p class="secondary fw-bold">Vision International
@@ -145,22 +184,26 @@
                         </ul>
 
                         <p class="text-secondary mt-4">Email Address</p>
-                        
+
                         <div
                             class="d-flex align-items-center">
-                            <box-icon type='solid' name='envelope' color="rgba(184, 18, 20)"></box-icon>
-                            <a href="mailto:visioncareinternationalmedical@gmail.com">visioncareinternationalmedical@gmail.com</a>
+                            <box-icon type='solid' name='envelope'
+                                color="rgba(184, 18, 20)"></box-icon>
+                            <a
+                                href="mailto:visioncareinternationalmedical@gmail.com">visioncareinternationalmedical@gmail.com</a>
                         </div>
 
                         <div class="d-flex align-items-center">
-                            <box-icon type='solid' name='envelope' color="rgba(184, 18, 20)"></box-icon>
-                            <a href="mailto:vision.intconstruct@gmail.com">vision.intconstruct@gmail.com</a>
+                            <box-icon type='solid' name='envelope'
+                                color="rgba(184, 18, 20)"></box-icon>
+                            <a
+                                href="mailto:vision.intconstruct@gmail.com">vision.intconstruct@gmail.com</a>
                         </div>
                     </div>
-                    <div class="map">
+                    <div id="map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7723.156934785407!2d121.1230913!3d14.566081700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c75d1df701c7%3A0x5f1ebe9bb4d86adb!2sVISION%20INTERNATIONAL%20CONSTRUCTION%20OPC!5e0!3m2!1sen!2sph!4v1709100516569!5m2!1sen!2sph"
-                            width="600" height="450" style="border:0;"
+                            style="border:0;"
                             allowfullscreen loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
