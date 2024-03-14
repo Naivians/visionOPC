@@ -1,3 +1,9 @@
+body {
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 /* navbar */
 
 .containers {
@@ -28,6 +34,7 @@ swiper-slide img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 20px;
 }
 
 .overlay h1 {
@@ -112,18 +119,20 @@ swiper-slide img {
 /* history */
 
 .history-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
+  grid-gap: 20px;
+  padding: 30px 0;
 }
 
-.history,
-.video-history {
-  flex-basis: 50%;
-}
-
+.video-history,
 .history {
-  padding-right: 50px;
+  align-self: center;
+}
+
+.video-history iframe {
+  width: 100%;
+  height: 400px;
 }
 
 .history h2 {
@@ -141,7 +150,7 @@ swiper-slide img {
   align-items: center;
   justify-content: space-between;
   /* flex-wrap: wrap; */
-  padding: 20px;
+  /* padding: 20px; */
 }
 .objTitle,
 .mission-container {
@@ -209,10 +218,17 @@ swiper-slide img {
   padding: 50px;
 }
 
+/* approach */
 /* .img-card {
   border: 1px solid #fff;
   width: 250px;
 } */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
+  grid-gap: 20px;
+}
 
 .card img {
   width: 100px;

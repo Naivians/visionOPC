@@ -35,29 +35,89 @@
   }
 }
 
+
+/* tablets */
 @media only screen and (max-width: 1000px) {
   .overlay h1 {
     font-size: 3.5rem;
   }
-
-  .objImg .img1 {
-    width: 500px;
-  }
 }
 
+
+/* small to large mobile */
 @media only screen and (max-width: 768px) {
   .overlay h1 {
-    font-size: 3rem;
+    font-size: 2.3rem;
+  }
+
+  .overlay {
+    padding: 20px;
+  }
+
+  .overlay p {
+    text-align: center;
+  }
+
+  .overlay a {
+    padding: 10px 20px;
   }
   .objImg {
     display: none;
   }
 
-  .history-content {
-    flex-wrap: wrap;
+  .mission-img img {
+    display: none;
   }
 
-  .mission-img img {
+  .objTitle,
+  .mission-container {
+    padding: 0px;
+  }
+
+  .mission-container .mission-img {
+    margin-right: 0px;
+  }
+
+  .links-container {
+    padding: 10px;
+  }
+
+
+  /* industrial */
+  .bg-img img{
     width: 100%;
   }
+
+  .bg-img{
+    text-align: center !important;
+    padding: 20px !important;
+  }
+
+
+  .bg-img h2{
+  
+    background-color: rgba(255,255,255, 0.2);
+    width: max-content !important;
+    text-align: center !important;
+    color: #fff;
+    padding: 10px 50px 10px 10px;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+
+  /* access */
+  .card-access-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .access .card-container {
+    width: 90% !important;
+    height: auto !important;
+  }
+
+  .access .card-container img{
+    width: 150px !important;
+    height: auto;
+  }
+
 }

@@ -8,12 +8,15 @@
     <!-- homepage css only -->
     <link rel="stylesheet" href="css/home.css" />
     <!-- global css -->
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/global.css" />
     <!-- home responsiveness -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
     <!-- bootstrap css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- AOS cdn -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -24,57 +27,90 @@
     />
 
     <!-- box icons -->
-    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!-- boxicons -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <title>Vision International COnstruction OPC</title>
+    <title>Vision International Construction OPC</title>
   </head>
   <body>
-
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top" >
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <a class="navbar-brand text-light " href="index.html"><img id="logo" src="img/logo.png" alt=""></a>
-          
-        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" >
+        <a class="navbar-brand text-light" href="index.html"
+          ><img id="logo" src="img/logo.png" alt=""
+        /></a>
+
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
             <li class="nav-item">
               <a class="nav-link" href="#" id="#home">Home</a>
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 About
               </a>
               <ul class="dropdown-menu nav-danger">
                 <li><a class="dropdown-item" href="#history">History</a></li>
-                <li><a class="dropdown-item" href="#objective">Objectives</a></li>
-                <li><a class="dropdown-item" href="#mission">Mission & Vision</a></li>
-                <li><a class="dropdown-item" href="#approach">Our Approach</a></li>
+                <li>
+                  <a class="dropdown-item" href="#objective">Objectives</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#mission">Mission & Vision</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#approach">Our Approach</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#testimonials">Testimonials</a>
+                </li>
                 <li><a class="dropdown-item" href="#links">Links</a></li>
-                <li><a class="dropdown-item" href="#partner">Our Partners</a></li>
-
+                <li>
+                  <a class="dropdown-item" href="#partner">Our Partners</a>
+                </li>
+                <!-- testimonials -->
               </ul>
             </li>
-            
+
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Products
               </a>
               <ul class="dropdown-menu nav-danger">
-                <li><a class="dropdown-item" href="#">Vision Floors</a></li>
+                <li>
+                  <a class="dropdown-item" href="vision_foor.html"
+                    >Vision Floors</a
+                  >
+                </li>
                 <li><a class="dropdown-item" href="#">Vision Ceilings</a></li>
                 <li><a class="dropdown-item" href="#">Vision Walls</a></li>
                 <li><a class="dropdown-item" href="#">Vision Sports</a></li>
                 <li><a class="dropdown-item" href="#">VisionCare</a></li>
-
               </ul>
             </li>
             <li class="nav-item">
@@ -90,18 +126,26 @@
 
     <div class="overlay" id="home">
       <h1>Vision International Construction OPC</h1>
-      <p> 
+      <p>
         <span class="bold fw-bold">You </span>
-         <span class="text-warning fw-bold">Envision </span> , 
-         <span class="bold fw-bold"> We</span> 
-         <span class="text-warning fw-bold"> Build </span> </p>
+        <span class="text-warning fw-bold">Envision </span> ,
+        <span class="bold fw-bold"> We</span>
+        <span class="text-warning fw-bold"> Build </span>
+      </p>
 
-      <a  href="contact.html" class="d-flex align-items-center justify-content-center main-button">
+      <a
+        href="contact.html"
+        class="d-flex align-items-center justify-content-center main-button"
+      >
         <span> Get a quote now </span>
-          <box-icon size="lg" id="greater-than" name='chevron-right' color="white"></box-icon>
+        <box-icon
+          size="lg"
+          id="greater-than"
+          name="chevron-right"
+          color="white"
+        ></box-icon>
       </a>
     </div>
-
 
     <!-- Slider main container -->
     <swiper-container
@@ -114,32 +158,53 @@
       autoplay-delay="3000"
       autoplay-disable-on-interaction="false"
     >
-      <swiper-slide><img src="img/VBackgrounds/VFloors.png" alt="" /></swiper-slide>
-      <swiper-slide><img src="img/VBackgrounds/VSports.png" alt="" /></swiper-slide>
-      <swiper-slide><img src="img/VBackgrounds/VWalls.png" alt="" /></swiper-slide>
-      <swiper-slide><img src="img/VBackgrounds/VCeilings.png" alt="" /></swiper-slide>
-      <swiper-slide><img src="img/VBackgrounds/VCare.png" alt="" /></swiper-slide>
+      <swiper-slide
+        ><img src="img/VBackgrounds/VFloors.png" alt=""
+      /></swiper-slide>
+      <swiper-slide
+        ><img src="img/VBackgrounds/VSports.png" alt=""
+      /></swiper-slide>
+      <swiper-slide
+        ><img src="img/VBackgrounds/VWalls.png" alt=""
+      /></swiper-slide>
+      <swiper-slide
+        ><img src="img/VBackgrounds/VCeilings.png" alt=""
+      /></swiper-slide>
+      <swiper-slide
+        ><img src="img/VBackgrounds/VCare.png" alt=""
+      /></swiper-slide>
     </swiper-container>
 
-    <div style="background-color: #f4f4f4;" id="history" class="pt-5 pb-5 mb-5" data-aos="fade-up">
+    <div
+      style="background-color: #f4f4f4"
+      id="history"
+      data-aos="fade-up"
+      class="mb-5"
+    >
       <div class="container history-content">
         <div class="history">
           <h2 class="secondary">History & Philosophy</h2>
-  
-          <p class="text-secondary"> <span class="fw-bold">VISION INTERNATIONAL CONSTRUCTION OPC</span> is a privately owned company that was established last September 2020. </br> </br>
+
+          <p class="text-secondary" style="padding-right: 20px;"> 
+            <span class="fw-bold">Vision International Construction OPC</span> 
+            is a privately owned company that was established last September 2020. </br> </br>
             It takes on the role of Importer, Supplier, Trading Business, and Construction Services for small to medium projects and performs project management services to coordinates specialist trade for industrial and commercial projects. </br></br>
             We also provide design outputs and engineering solutions as value-added services to clients. 
             </p>
         </div>
 
-        <div class="video-history" >
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/O5NHMD2DSGU?si=oCtOey7jzG88kxXh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="video-history">
+          <iframe
+            src="https://www.youtube.com/embed/O5NHMD2DSGU?si=oCtOey7jzG88kxXh"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </div>
-    
-    
-    
+
     <main>
       <!-- history -->
       <div class="container">
@@ -147,133 +212,215 @@
         <div class="objective" data-aos="fade-up" id="objective">
           <div class="objTitle">
             <h2 class="secondary">Our Objective</h2>
-     <p class=" text-secondary  mbmt">Our  objective is to provide our client with a superb experience when we are chosen to execute our projects. </p>
-            <p class=" text-secondary">Our emphasis on clear communication and follow through procedures ensures that client’s objective is top priority in the planning and execution of all our process.</p>
-    </div>
-  
-    <div class="objImg " data-aos="fade-up-left">
-            <img src="img/objBg.png" alt="" class="img1">
-            <img src="img/objShape.png" alt="" class="img2">
-    </div>
+            <p class="text-secondary mbmt">
+              Our objective is to provide our client with a superb experience
+              when we are chosen to execute our projects.
+            </p>
+            <p class="text-secondary">
+              Our emphasis on clear communication and follow through procedures
+              ensures that client’s objective is top priority in the planning
+              and execution of all our process.
+            </p>
+          </div>
 
+          <div class="objImg" data-aos="fade-up-left">
+            <img src="img/objBg.png" alt="" class="img1" />
+            <img src="img/objShape.png" alt="" class="img2" />
+          </div>
         </div>
         <!-- mission and vision -->
-        
         <div class="mission-container mb-5" data-aos="fade-up" id="mission">
           <!-- mission img -->
-          <div class="mission-img" >
-            <img src="img/missinBG.png" alt="" srcset="">
+          <div class="mission-img">
+            <img src="img/missinBG.png" alt="" srcset="" />
           </div>
           <!-- mission content -->
           <div class="mision-contents">
-              <div class="mision">
-                <h2 class="secondary">Mission</h2>
-                <p class="mbmt text-secondary">To make your vision a reality through meeting the requirements with the confidence of quality work and reasonable price in a timely manner.</p>
-              </div>
+            <div class="mision">
+              <h2 class="secondary">Mission</h2>
+              <p class="mbmt text-secondary">
+                To make your vision a reality through meeting the requirements
+                with the confidence of quality work and reasonable price in a
+                timely manner.
+              </p>
+            </div>
 
-              <div class="mision">
-                <h2 class="secondary">Vision</h2>
-                <p class="mbmt text-secondary">First in mind as the most valued business partner in importation, supply and installation in the field of construction.
+            <div class="mision">
+              <h2 class="secondary">Vision</h2>
+              <p class="mbmt text-secondary">
+                First in mind as the most valued business partner in
+                importation, supply and installation in the field of
+                construction.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- our approach -->
+      <section id="approach" class="approach" data-aos="fade-up">
+        <div class="overlays">
+          <h2 class="text-center text-light mb-4">
+            Our approach to project and management execution can be summarized
+            as follows:
+          </h2>
+          <div class="card-container">
+            <!-- d-md-flex justify-content-between flex-wrap p-5 align-items-center -->
+            <div class="card" data-aos="fade-up">
+              <img
+                src="img/icons/calendar.png"
+                class="card-img-top mx-auto"
+                alt="calendar"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Develop a comprehensive schedule and resource plan to achieve
+                  the project goals defined by the client.
                 </p>
               </div>
+            </div>
+
+            <!-- comss -->
+            <div class="card" data-aos="fade-up">
+              <img
+                src="img/icons/coms.png"
+                class="card-img-top mx-auto"
+                alt="calendar"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Maintain transparent communication with all stakeholders
+                  involved in the project.
+                </p>
+              </div>
+            </div>
+            <!-- monitor -->
+            <div class="card" id="actives" data-aos="fade-up">
+              <img
+                src="img/icons/monitor.png"
+                class="card-img-top mx-auto"
+                alt="calendar"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Monitor progress and make necessary adjustments to stay on
+                  track.
+                </p>
+              </div>
+            </div>
+            <!-- quality -->
+            <div class="card" data-aos="fade-up">
+              <img
+                src="img/icons/quality.png"
+                class="card-img-top mx-auto"
+                alt="calendar"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Provide diligent oversight to ensure the quality of the work
+                  being performed.
+                </p>
+              </div>
+            </div>
+            <!-- delivery -->
+            <div class="card" data-aos="fade-up">
+              <img
+                src="img/icons/deliver.png"
+                class="card-img-top mx-auto"
+                alt="calendar"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Successfully finalize and deliver the project within the
+                  designated timeframe.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-         <!-- our approach -->
-    <section id="approach" class="approach" data-aos="fade-up">
-      <div class="overlays">
-        <h2 class="text-center text-light mb-4">Our approach to project and management execution can be summarized as follows:</h2>
-        <div class="d-md-flex justify-content-between flex-wrap p-5 align-items-center">
+      </section>
 
-          <!-- calendar -->
-          <!-- <div class="card" style="width: 14rem;" data-aos="fade-up" >
-            <img src="img/icons/calendar.png" class="card-img-top mx-auto" alt="calendar">
-            <div class="card-body">
-              <p class="card-text">Develop a comprehensive schedule and resource plan to achieve the project goals defined by the client.</p>
-            </div>
-          </div> -->
+      <section class="testimonials" data-aos="fade-up" id="testimonials">
+        <div class="container pt-5 pb-5">
+          <h2 class="text-center mb-5 text-secondary">
+            What our client says about us?
+          </h2>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div
+                class="swiper-slide d-flex align-items-center justify-content-center flex-column"
+              >
+                <iframe
+                  width="100%"
+                  height="500px"
+                  src="https://www.youtube.com/embed/BfuFveGu7iI?si=W3nk7fxhD3SFBBPl"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
 
-          <div class="card" style="width: 14rem;" data-aos="fade-up" >
-            <img src="img/icons/calendar.png" class="card-img-top mx-auto" alt="calendar">
-            <div class="card-body">
-              <p class="card-text">Develop a comprehensive schedule and resource plan to achieve the project goals defined by the client.</p>
-            </div>
-          </div>
+              <div
+                class="swiper-slide d-flex align-items-center justify-content-center flex-column"
+              >
+                <iframe
+                  width="100%"
+                  height="500px"
+                  src="https://www.youtube.com/embed/6_3lrMb-XRE?si=uTj0tDVYNmPrrtf-"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
 
-          <!-- comss -->
-          <div class="card" style="width: 14rem;" data-aos="fade-up" >
-            <img src="img/icons/coms.png" class="card-img-top mx-auto" alt="calendar">
-            <div class="card-body">
-              <p class="card-text">Maintain transparent communication with all stakeholders involved in the project.</p>
+              <div
+                class="swiper-slide d-flex align-items-center justify-content-center flex-column"
+              >
+                <iframe
+                  width="100%"
+                  height="500px"
+                  src="https://www.youtube.com/embed/wTPNLoGHqvo?si=iEV0sFFDZhoESmpG"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
-          </div>
-          <!-- monitor -->
-          <div class="card" style="width: 14rem;" id="actives" data-aos="fade-up" >
-            <img src="img/icons/monitor.png" class="card-img-top mx-auto" alt="calendar">
-            <div class="card-body">
-              <p class="card-text">Monitor progress and make necessary adjustments to stay on track.</p>
-            </div>
-          </div>
-          <!-- quality -->
-          <div class="card" style="width: 14rem;" data-aos="fade-up" >
-            <img src="img/icons/quality.png" class="card-img-top mx-auto" alt="calendar">
-            <div class="card-body">
-              <p class="card-text">Provide diligent oversight to ensure the quality of the work being performed.</p>
-            </div>
-          </div>
-          <!-- delivery -->
-          <div class="card" style="width: 14rem;" data-aos="fade-up" >
-            <img src="img/icons/deliver.png" class="card-img-top mx-auto" alt="calendar">
-            <div class="card-body">
-              <p class="card-text">Successfully finalize and deliver the project within the designated timeframe.</p>
-            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
           </div>
         </div>
-      </div>
-    </section>
-    
-    <section class="testimonials p-lg-5 p-sm-1" data-aos="fade-up">
-      <div class="container">
-        <h2 class="text-center mb-5 text-secondary">What our client says about us?</h2>
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide d-flex align-items-center justify-content-center flex-column">
-            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/BfuFveGu7iI?si=W3nk7fxhD3SFBBPl" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
 
-          <div class="swiper-slide d-flex align-items-center justify-content-center flex-column">
-            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/6_3lrMb-XRE?si=uTj0tDVYNmPrrtf-" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-
-          <div class="swiper-slide d-flex align-items-center justify-content-center flex-column">
-            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/wTPNLoGHqvo?si=iEV0sFFDZhoESmpG" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-  
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-  
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
-      </div>
-
-       <!-- <img src="img/objShape.png" alt="" id="img1">
+        <!-- <img src="img/objShape.png" alt="" id="img1">
        <img src="img/objShape.png" alt="" id="img2">
        <img src="img/objShape.png" alt="" id="img3"> -->
-    </section>
-    <!-- Slider main container -->
+      </section>
+      <!-- Slider main container -->
     </main>
 
     <footer id="links" data-aos="fade-up">
-      <div class="links-container d-md-flex align-items-start justify-content-start">
-        <div class="navigations-links mx-5">
+      <section class="partners pt-5" id="partner" data-aos="fade-up">
+        <div class="container">
+          <h2 class="text-center secondary">OUR VALUED BUSINESS PARTNERS</h2>
+          <img src="img/partners.png" alt="" />
+        </div>
+      </section>
+
+      <div
+        class="links-container d-md-flex align-items-start justify-content-start"
+      >
+        <div class="navigations-links">
           <p class="text-light">Navigation links</p>
           <ul>
             <li><a href="#home">Home</a></li>
@@ -285,26 +432,48 @@
         <div class="socmed">
           <p class="text-light">Social Media</p>
           <ul>
-            
-            <li><a href="https://www.facebook.com/vision.intlconstruction" target="_blank"><box-icon name='facebook-circle' type='logo' color="white"></box-icon> </a></li>
+            <li>
+              <a
+                href="https://www.facebook.com/vision.intlconstruction"
+                target="_blank"
+                ><box-icon
+                  name="facebook-circle"
+                  type="logo"
+                  color="white"
+                ></box-icon>
+              </a>
+            </li>
 
-            <li><a href="https://www.instagram.com/visionintlconstruct/" target="_blank"><box-icon name='instagram-alt' type='logo' color="white"></box-icon></a></li>
+            <li>
+              <a
+                href="https://www.instagram.com/visionintlconstruct/"
+                target="_blank"
+                ><box-icon
+                  name="instagram-alt"
+                  type="logo"
+                  color="white"
+                ></box-icon
+              ></a>
+            </li>
 
-            <li><a href="https://www.youtube.com/@VisionIntlCons" target="_blank"><box-icon name='youtube' type='logo' color="white"></box-icon></a></li>
+            <li>
+              <a href="https://www.youtube.com/@VisionIntlCons" target="_blank"
+                ><box-icon name="youtube" type="logo" color="white"></box-icon
+              ></a>
+            </li>
 
-            <li><a href="https://www.tiktok.com/@visioninternationalcons?lang=en" target="_blank"><box-icon name='tiktok' type='logo' color="white"></box-icon></a></li>
+            <li>
+              <a
+                href="https://www.tiktok.com/@visioninternationalcons?lang=en"
+                target="_blank"
+                ><box-icon name="tiktok" type="logo" color="white"></box-icon
+              ></a>
+            </li>
           </ul>
         </div>
       </div>
-      
-      <section class="partners pt-5" id="partner" data-aos="fade-up">
-       <div class="container">
-        <h2 class="text-center secondary">OUR VALUED BUSINESS PARTNERS</h2>
-        <img src="img/partners.png" alt="">
-       </div>
-      </section>
     </footer>
-    
+
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
@@ -313,6 +482,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <!-- AOS cdn js -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
