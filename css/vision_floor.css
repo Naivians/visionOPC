@@ -189,7 +189,7 @@ swiper-slide img {
 /* industrial */
 
 .bg-img {
-  background-color: rgba(253, 0, 25, 0.9);
+  background-color: rgba(0,0,0, 0.5);
   background-image: url("/img/VF/Industrial/Industrial.png");
   background-blend-mode: multiply;
   /* width: 100%; */
@@ -369,3 +369,111 @@ swiper-slide img {
 .raise-content p{
   font-size: 20px;
 }
+
+/* water proofing */
+.water-container{
+  overflow: hidden;
+  position: relative;
+  /* height: 100vh; */
+  /* border: 1px solid #000; */
+  width: 100%;
+}
+.water-container #bg-img{
+    width: 100%;
+    position: relative;
+    /* left: -50px; */
+    transform: scale(1.1);
+    top: -150px;
+    z-index: 1;
+}
+
+.water-container .water-title{
+  position: absolute;
+  z-index: 3;
+  top: 80px;
+  width: 100%;
+}
+.water-container .water-title .water-box{
+  background-color: #c40b1d;
+  width: 300px;
+  height: 60px;
+  position: relative;
+  right: -70%;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.water-container .water-title .water-boxes2{
+  background-color: #fff;
+  top: -80px;
+  right: -72%;
+}
+
+
+.container.water-container{
+  /* border: 1px solid #000; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: -50px;
+}
+
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.container.water-container .bituminous, .container.water-container .liquid{
+  /* border: 1px solid #000; */
+  padding: 20px;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  animation: beat 1s infinite;
+} 
+
+
+
+.container.water-container img{
+  width: 300px;
+}
+
+.container.water-container p{
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #c40b1d;
+}
+
+
+
+/* preloader */
+#loader{
+  background: rgba(255,255,255) url('/vision.gif') no-repeat center 
+  center;
+  background-size: cover;
+  background-size: 8%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99990;
+  font-size: 3rem;
+ }
+
+ 
+/* preloader */
+
+
+
+
+
+

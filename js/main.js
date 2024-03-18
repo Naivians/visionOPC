@@ -37,9 +37,15 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+// preloader
+// var loader = document.getElementById("loader");
+// window.addEventListener("load", function () {
+//   setTimeout(function () {
+//     loader.style.display = "none";
+//   }, 1500);
+// });
 
-// loader 
 
 $(window).on("load",function(){
-  $(".loader-wrapper").fadeOut("slow");
+  $("#loader").fadeOut("slow");
 });

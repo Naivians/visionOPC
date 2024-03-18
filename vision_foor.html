@@ -10,7 +10,7 @@
     <!-- home responsiveness -->
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- pre-loader css -->
-    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/loader.css" />
 
     <!-- vision floor css -->
     <link rel="stylesheet" href="css/vision_floor.css" />
@@ -50,6 +50,10 @@
     <title>Vision International Construction OPC</title>
   </head>
   <body>
+    <!-- pre loader -->
+    <div id="loader"></div>
+
+
     <!-- caping seal -->
     <div
       class="modal fade"
@@ -332,7 +336,7 @@
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
+      <div class="container" id="navigation">
         <a class="navbar-brand text-light" href="index.html"
           ><img id="logo" src="img/logo.png" alt
         /></a>
@@ -702,6 +706,31 @@
           </div>
         </div>
       </div>
+       <!-- water proofing -->
+      <section class="water-container" id="water">
+        <div class="water-title"  data-aos="fade-left">
+          <div class="water-box water-boxes1"></div>
+          <div class="water-box water-boxes2">
+            <h2>Water Proofing</h2>
+          </div>
+        </div>
+        <div data-aos="fade-up">
+          <img src="/img/VF/waterproofing/bg.png" alt="" id="bg-img" />
+        </div>
+        <div class="container water-container" data-aos="fade-up">
+          <div class="bituminous">
+            <img src="/img/VF/waterproofing/Bituminous.png" alt="" />
+            <p>Bituminous Membrane</p>
+            <span>Size: 1m x 10m</span>
+          </div>
+          <div class="liquid">
+            <img src="/img/VF/waterproofing/Liquid.png" alt="" />
+            <p>Liquiz Membrane</p>
+          </div>
+        </div>
+      </section>
+      
+
       <div style="margin-top: 500px"></div>
     </main>
 
