@@ -12,7 +12,7 @@ body {
 }
 
 .hero {
-  background-image: url("/img/VF/VF-banner.png");
+  background-image: url("img/VF-banner.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -741,4 +741,20 @@ swiper-slide img {
 }
 
 
+<<<<<<< HEAD
+=======
+
+/* preloader */
+#loader {
+  background: rgba(255, 255, 255) url("vision.gif") no-repeat center center;
+  background-size: cover;
+  background-size: 8%;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 99990;
+  font-size: 3rem;
+}
+
+>>>>>>> d01231ee4f68e8a8be4e93c90724b23fc37110b8
 /* preloader */
