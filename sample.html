@@ -1,70 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* .container {
+  display: inline-block;
+  cursor: pointer;
+} */
 
-    <style>
-      .card {
-        width: 190px;
-        height: 254px;
-        transition: all 0.2s;
-        position: relative;
-        cursor: pointer;
-      }
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
 
-      .card-inner {
-        width: inherit;
-        height: inherit;
-        background: rgba(255, 255, 255, 0.05);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(10px);
-        border-radius: 8px;
-      }
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
 
-      .card:hover {
-        transform: scale(1.04) rotate(1deg);
-      }
+.change .bar2 {opacity: 0;}
 
-      .circle {
-        width: 100px;
-        height: 100px;
-        background: radial-gradient(#b0e633, #53ef7d);
-        border-radius: 50%;
-        position: absolute;
-        animation: move-up6 2s ease-in infinite alternate-reverse;
-      }
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+</style>
+</head>
+<body>
 
-      .circle:nth-child(1) {
-        top: -25px;
-        left: -25px;
-      }
+<p>Click on the Menu Icon to transform it to "X":</p>
+<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
 
-      .circle:nth-child(2) {
-        bottom: -25px;
-        right: -25px;
-        animation-name: move-down1;
-      }
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
 
-      @keyframes move-up6 {
-        to {
-          transform: translateY(-10px);
-        }
-      }
-
-      @keyframes move-down1 {
-        to {
-          transform: translateY(10px);
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="card">
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="card-inner"></div>
-    </div>
-  </body>
+</body>
 </html>

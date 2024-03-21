@@ -1,11 +1,16 @@
 // be default navbar is transparent
 // then add bg-dark when scroll > 100
 let nav = document.querySelector("nav");
+const menu = document.querySelector(".menu");
 let navLinks = document.querySelectorAll(".nav-link");
+
 window.addEventListener("scroll", function () {
   if (window.scrollY > 10) {
     nav.classList.add("nav-danger", "shadow");
+    
+    menu.classList.add("displayMenu")
   } else {
+    menu.classList.remove("displayMenu");
     nav.classList.remove("nav-danger", "shadow");
   }
 });
@@ -45,7 +50,14 @@ const swiper = new Swiper(".swiper", {
 //   }, 1500);
 // });
 
-
-$(window).on("load",function(){
+$(window).on("load", function () {
   $("#loader").fadeOut("slow");
 });
+
+function toggleSidebar(x) {
+  const sidebar = document.querySelector(".sidebar");
+  const s = document.querySelector('main');
+  sidebar.classList.toggle("active");
+  s.classList.toggle("move-left");
+  x.classList.toggle("change");
+}

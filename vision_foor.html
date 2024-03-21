@@ -65,6 +65,27 @@
     </style>
   </head>
   <body>
+
+    <!-- sidebar -->
+    
+    
+    
+    <div class="sidebar">
+      <ul>
+        <li><a href="#bacterial" >Antibacterial Rolled Vinyl</a></li>
+        <li><a href="#industrial" >Industrial Flooring</a></li>
+        <li><a href="#static" >Antistatic Vinyl</a></li>
+        <li><a href="#raise" >Raised Flooring</a></li>
+        <li><a href="#water" >Waterproofing</a></li>
+        <li><a href="#carpet" >Carpet Tiles</a></li>
+        <li><a href="#concrete" >Vinyl Tiles</a></li>
+        <li><a href="#planks" >Vinyl Wood Planks</a></li>
+        <li><a href="#rubber" >Rubber Tiles</a></li>
+        <li><a href="#gym" >Gym Mat</a></li>
+        <li><a href="#access" >Accessories</a></li>
+      </ul>
+    </div>
+
     <!-- pre loader -->
     <div id="loader"></div>
 
@@ -350,7 +371,17 @@
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container" id="navigation">
+      <div class="container-fluid px-4" id="navigation">
+      
+        <!-- vision floor side bar -->
+        <!-- <box-icon name='menu' onclick="toggleSidebar()" color="white" size ="lg"></box-icon> -->
+
+        <div class="menu" onclick="toggleSidebar(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
         <a class="navbar-brand text-light" href="index.html"
           ><img id="logo" src="img/logo.png" alt
         /></a>
@@ -408,8 +439,7 @@
         <h1 class="text-light">VISION FLOORS</h1>
       </div>
     </section>
-
-    <main>
+    <main class="move">
       <!-- vf navigation -->
 
       <section id="bacterial" class="bacterials mt-5">
@@ -420,16 +450,16 @@
             </div>
             <div class="img-container">
               <img src="img/vf/bacterial/2.png" alt="" />
-              <h4 class="secondary">Anti-Bacterial Rolled Vinyl</h4>
-              <ul>
+              <h2 class="secondary" data-aos="slide-left">Antibacterial Rolled Vinyl</h2>
+              <ul data-aos="slide-left">
                 <li>2MM X 2 METERS X 20 METERS</li>
                 <li>3MM X 2 METERS X 20 METERS</li>
               </ul>
             </div>
           </div>
-          <h4 class="mt-5">Non- Directional</h4>
-          <span>(swipe right to see more)</span>
-          <div class="non-d">
+          <h4 class="mt-5 secondary" data-aos="slide-right">Non- Directional</h4>
+          <span data-aos="slide-left">(swipe right to see more)</span>
+          <div class="non-d" data-aos="slide-left">
             <div class="owl-carousel">
               <div class="boxes">
                 <img src="img/VF/bacterial/non/1.png" alt="" />
@@ -474,8 +504,8 @@
               </div>
             </div>
           </div>
-          <h4 class="mt-5">Directional</h4>
-          <div class="directional mb-5">
+          <h4 class="mt-5 secondary" data-aos="slide-right">Directional</h4>
+          <div class="directional mb-5" data-aos="slide-left">
             <div class="Directional">
               <div class="owl-carousel">
                 <div class="boxes">
@@ -503,113 +533,11 @@
             </div>
           </div>
         </div>
-
-        <div class="access-container">
-          <h2 class="secondary mb-4 text-center">Accessories</h2>
-          <div class="container card-access-container">
-            <div class="access">
-              <div
-                class="card-container"
-                data-bs-toggle="modal"
-                data-bs-target="#card1"
-              >
-                <div class="img-container">
-                  <img src="img/vf/bacterial/a1.png" alt="" />
-                </div>
-                <div class="img-name">
-                  <p>CAPPING SEAL</p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="access"
-              data-bs-toggle="modal"
-              data-bs-toggle="modal"
-              data-bs-target="#card2"
-            >
-              <div class="card-container">
-                <div class="img-container">
-                  <img src="img/vf/bacterial/a2.png" alt="" />
-                </div>
-                <div class="img-name">
-                  <p>WELDING ROD</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="access" data-bs-toggle="modal" data-bs-target="#card3">
-              <div class="card-container">
-                <div class="img-container">
-                  <img src="img/vf/bacterial/a3.png" alt="" />
-                </div>
-                <div class="img-name">
-                  <p>COVE FORMER</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="access" data-bs-toggle="modal" data-bs-target="#card4">
-              <div class="card-container">
-                <div class="img-container">
-                  <img src="img/vf/bacterial/a4.png" alt="" />
-                </div>
-                <div class="img-name">
-                  <p>SELF-LEVELING COMPOUND</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="access" data-bs-toggle="modal" data-bs-target="#card5">
-              <div class="card-container">
-                <div class="img-container">
-                  <img src="img/vf/bacterial/a5.png" alt="" />
-                </div>
-                <div class="img-name">
-                  <p>BASE BOARD</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="access" data-bs-toggle="modal" data-bs-target="#card6">
-              <div class="card-container">
-                <div class="img-container">
-                  <img src="img/vf/bacterial/a6.png" alt="" />
-                </div>
-                <div class="img-name">
-                  <p>COPPER TAPE</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="access" data-bs-toggle="modal" data-bs-target="#card7">
-              <div class="card-container">
-                <div class="img-container">
-                  <img src="img/vf/bacterial/a7.png" alt="" />
-                </div>
-                <div class="img-name">
-                  <p>STAIR TREAD</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="access" data-bs-toggle="modal" data-bs-target="#card8">
-              <div class="card-container">
-                <div class="img-container">
-                  <img src="img/vf/bacterial/a8.png" alt="" />
-                </div>
-                <div class="img-name">
-                  <p>STAIR NOSING</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
-      <section>
+      <section id="industrial">
         <div class="bg-img p-lg-5">
-          <h2 class="mb-4">Industrial Flooring</h2>
+          <h2 class="mb-4" data-aos="slide-right">Industrial Flooring</h2>
           <div class="bg-container">
             <div data-aos="fade-right">
               <img src="img/VF/Industrial/img1.png" alt="" />
@@ -652,17 +580,18 @@
       </section>
 
       <!-- anti static vinyl -->
-      <section class="anti">
+      <section class="anti" id="static">
         <div class="anti-title" data-aos="fade-left">
           <div class="anti-box anti-box1"></div>
           <div class="anti-box anti-box2">
-            <h2>Anti-Static Vinyl</h2>
+            <h2>Antistatic Vinyl</h2>
           </div>
+          
         </div>
         <div class="container anti-container">
           <div class="left-content">
             <!-- tile -->
-            <div class="tile">
+            <div class="tile" data-aos="slide-right">
               <div class="mb-3">
                 <h5>Tile Type</h5>
               </div>
@@ -676,7 +605,7 @@
               />
             </div>
             <!-- roll -->
-            <div class="roll">
+            <div class="roll" data-aos="slide-right">
               <div class="mb-2 mt-5">
                 <h5>Roll Type</h5>
               </div>
@@ -685,8 +614,8 @@
             </div>
           </div>
           <div class="right-content">
-            <img src="img/VF/ANTISTATIC/roll.png" alt="" srcset="" />
-            <p>
+            <img src="img/VF/ANTISTATIC/roll.png" alt="" srcset="" data-aos="slide-left"/>
+            <p data-aos="slide-left">
               any flooring type that will generate less static electricity than
               other floor. The reason for specifying anti-static vinyl flooring
               is to setup a special space, very often in commercial setup, that
@@ -696,23 +625,23 @@
         </div>
       </section>
 
-      <div class="raise-main-container">
+      <div class="raise-main-container" id="raise">
         <div class="title-container px-lg-5" data-aos="fade-left">
           <h2>Raised Flooring</h2>
           <div class="box box1"></div>
           <div class="box box2"></div>
         </div>
-        <div class="container raise-container">
+        <div class="container raise-container" >
           <div class="raise-img-container">
-            <img src="img/VF/raise/1.png" alt="raise-floor" />
+            <img src="img/VF/raise/1.png" alt="raise-floor" data-aos="slide-right"/>
           </div>
-          <img src="img/VF/raise/2.png" id="img-absolute" alt="" />
+          <img src="img/VF/raise/2.png" id="img-absolute" alt="" data-aos="slide-right"/>
           <div class="raise-content">
-            <div>
+            <div data-aos="slide-left">
               <img src="img/vf/raise/3.png" alt="" />
             </div>
-            <p>DIMENSION: 600mm x 600mm</p>
-            <p>
+            <p data-aos="slide-left">DIMENSION: 600mm x 600mm</p>
+            <p data-aos="slide-left">
               A raised floor provides an elevated structural floor above a solid
               substrate to create a hidden void for the passage of mechanical
               and electrical services.
@@ -725,7 +654,7 @@
         <div class="water-title" data-aos="fade-left">
           <div class="water-box water-boxes1"></div>
           <div class="water-box water-boxes2">
-            <h2>Water Proofing</h2>
+            <h2>Waterproofing</h2>
           </div>
         </div>
         <div data-aos="fade-up">
@@ -740,7 +669,7 @@
           </div>
           <div class="liquid">
             <img src="/img/VF/waterproofing/Liquid.png" alt="" />
-            <p>Liquiz Membrane</p>
+            <p>Liquid Membrane</p>
           </div>
         </div>
       </section>
@@ -832,13 +761,239 @@
               </div>
               <h2>carpet vinyl tiles</h2>
             </div>
-
-          
         </div>
       </section>
-      
-      <div style="margin-top: 500px"></div>
+
+      <section class="planks" id="planks">
+        <div class="container">
+          <div class="planks-flex-container">
+            <div class="planks-card" data-aos="slide-right" >
+              <img src="img/planks/v-planks.png" alt="">
+              <p>Vinyl Planks</p>
+            </div>
+
+            <div class="planks-card" data-aos="slide-right" >
+              <img src="img/planks/v-wood.png" alt="">
+              <p>ENGINEERED WOOD</p>
+            </div>
+
+            <div class="planks-card" data-aos="slide-right">
+              <img src="img/planks/v-spc.png" alt="">
+              <p>SPC PLANKS</p>
+            </div>
+          </div>
+          <div class="v-content" data-aos="fade-up">
+            <div>
+              <p class="v-sizes"><strong>Thickness:</strong>  2mm / 3mm / 15mm</p>
+              <p class="v-sizes"><strong>Dimension:</strong>  184mm x 950mm / 180mm x 920mm / 6" x 36"</p>
+            </div>
+            <div>
+              <h2>VINYL WOOD PLANKS</h2>
+            </div>
+          </div>
+        </div>
+        <div class="v-img-container" data-aos="fade-up">
+          <img src="img/planks/v-bg.png" alt="">
+        </div>
+      </section>
+
+      <section class="rubber" id="rubber">
+        <div class="container">
+          <div class="rubber-container">
+            <div data-aos="slide-right">
+              <img src="img/rubber/rubber-bg.png" alt="">
+            </div>
+            <div class="left" data-aos="slide-left">
+              <img src="img/rubber/rubber.png" alt="">
+              <h2 class="text-center">RUBBER TILES</h2>
+              <p><strong>DIMENSION:</strong> 500mm x 500mm</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="gym" id="gym">
+          <img src="img/mat/gym-bg.png" alt="" class="gym-img" data-aos="fade-up">
+          
+         <div class="gym-overlay" data-aos="fade-up">
+          <div class="container gym-container">
+            <div class="gym-left" data-aos="slide-right">
+              <h2 class="text-center">GYM MAT</h2>
+              <p class="text-light"><strong >DIMENSION:</strong> 1m x 1m by 15mm</p>
+            </div>
+            <div class="gym-right" data-aos="slide-left">
+              <img src="img/mat/gym-mat.png" alt="">
+            </div>
+          </div>
+         </div>
+
+      </section>
+
+      <div class="access-container" id="access">
+        <h2 class="secondary mb-4 text-center">Accessories</h2>
+        <div class="container card-access-container">
+          <div class="access">
+            <div
+              class="card-container"
+              data-bs-toggle="modal"
+              data-bs-target="#card1"
+            >
+              <div class="img-container">
+                <img src="img/vf/bacterial/a1.png" alt="" />
+              </div>
+              <div class="img-name">
+                <p>CAPPING SEAL</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="access"
+            data-bs-toggle="modal"
+            data-bs-toggle="modal"
+            data-bs-target="#card2"
+          >
+            <div class="card-container">
+              <div class="img-container">
+                <img src="img/vf/bacterial/a2.png" alt="" />
+              </div>
+              <div class="img-name">
+                <p>WELDING ROD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="access" data-bs-toggle="modal" data-bs-target="#card3">
+            <div class="card-container">
+              <div class="img-container">
+                <img src="img/vf/bacterial/a3.png" alt="" />
+              </div>
+              <div class="img-name">
+                <p>COVE FORMER</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="access" data-bs-toggle="modal" data-bs-target="#card4">
+            <div class="card-container">
+              <div class="img-container">
+                <img src="img/vf/bacterial/a4.png" alt="" />
+              </div>
+              <div class="img-name">
+                <p>SELF-LEVELING COMPOUND</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="access" data-bs-toggle="modal" data-bs-target="#card5">
+            <div class="card-container">
+              <div class="img-container">
+                <img src="img/vf/bacterial/a5.png" alt="" />
+              </div>
+              <div class="img-name">
+                <p>BASE BOARD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="access" data-bs-toggle="modal" data-bs-target="#card6">
+            <div class="card-container">
+              <div class="img-container">
+                <img src="img/vf/bacterial/a6.png" alt="" />
+              </div>
+              <div class="img-name">
+                <p>COPPER TAPE</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="access" data-bs-toggle="modal" data-bs-target="#card7">
+            <div class="card-container">
+              <div class="img-container">
+                <img src="img/vf/bacterial/a7.png" alt="" />
+              </div>
+              <div class="img-name">
+                <p>STAIR TREAD</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="access" data-bs-toggle="modal" data-bs-target="#card8">
+            <div class="card-container">
+              <div class="img-container">
+                <img src="img/vf/bacterial/a8.png" alt="" />
+              </div>
+              <div class="img-name">
+                <p>STAIR NOSING</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer id="links">
+        <div
+          class="links-container d-md-flex align-items-start justify-content-start"
+        >
+          <div class="navigations-links">
+            <p class="text-light">Navigation links</p>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="socmed">
+            <p class="text-light">Social Media</p>
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/vision.intlconstruction"
+                  target="_blank"
+                  ><box-icon
+                    name="facebook-circle"
+                    type="logo"
+                    color="white"
+                  ></box-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a
+                  href="https://www.instagram.com/visionintlconstruct/"
+                  target="_blank"
+                  ><box-icon
+                    name="instagram-alt"
+                    type="logo"
+                    color="white"
+                  ></box-icon
+                ></a>
+              </li>
+  
+              <li>
+                <a href="https://www.youtube.com/@VisionIntlCons" target="_blank"
+                  ><box-icon name="youtube" type="logo" color="white"></box-icon
+                ></a>
+              </li>
+  
+              <li>
+                <a
+                  href="https://www.tiktok.com/@visioninternationalcons?lang=en"
+                  target="_blank"
+                  ><box-icon name="tiktok" type="logo" color="white"></box-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </main>
+
+   
+
+    
 
     <!-- owl js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -860,6 +1015,10 @@
           stagePadding: 200,
         });
       });
+
+      
+
+    
     </script>
   </body>
 </html>
