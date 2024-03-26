@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- all configuration of css -->
+    <link rel="stylesheet" href="css/setup.css" />
+    <!-- global css -->
+    <link rel="stylesheet" href="css/global.css" />
+
+    <!-- global css -->
+    <link rel="stylesheet" href="css/ceiling.css" />
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+    <!-- bootstrap css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- swiper cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- boxicons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Vision International Construction OPC</title>
+
+    <style>
+      /* preloader */
+      #loader {
+        background: rgba(255, 255, 255) url("vision.gif") no-repeat center
+          center;
+        background-size: cover;
+        background-size: 8%;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 99990;
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- pre loader -->
+    <div id="loader"></div>
+    <!-- sidebar -->
+    <div class="sidebar">
+      <ul>
+        <li><a href="#ceiling">ACCOUTIC BOARDS</a></li>
+        <li><a href="#gypsum">GYPSUM BOARD</a></li>
+        <li><a href="#pvc">PVC CEILING</a></li>
+        <li><a href="#microbal">ANTIMICROBAL CEILING</a></li>
+        <li><a href="#buffle">BAFFLE CEILING</a></li>
+      </ul>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container px-5" id="navigation">
+        <!-- vision floor side bar -->
+        <!-- <box-icon name='menu' onclick="toggleSidebar()" color="white" size ="lg"></box-icon> -->
+
+        <div class="menu" onclick="toggleSidebar(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+        <a class="navbar-brand text-light" href="index.html"
+          ><img id="logo" src="img/logo.png" alt
+        /></a>
+
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Products
+              </a>
+              <ul class="dropdown-menu nav-danger">
+                <li>
+                  <a class="dropdown-item" href="vision_foor.html"
+                    >Vision Floors</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Vision Ceilings</a></li>
+                <li><a class="dropdown-item" href="#">Vision Walls</a></li>
+                <li><a class="dropdown-item" href="#">Vision Sports</a></li>
+                <li><a class="dropdown-item" href="#">VisionCare</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- hero -->
+      <section class="hero">
+        <div class="video-container">
+          <video
+            id="fullscreen-video"
+            src="img/ceiling.mp4"
+            autoplay
+            muted
+            loop
+            type="video/mp4"
+          ></video>
+        </div>
+      </section>
+
+      <!-- ceiling -->
+      <section class="ceiling" id="ceiling">
+        <div
+          class="image-preview-container"
+          id="imagePreviewContainer_0"
+          style="display: none"
+        >
+          <div class="closeBTN">
+            <span class="close-button" onclick="closeImagePreview(0)">×</span>
+          </div>
+          <img
+            class="previewed-image"
+            id="previewedImage_0"
+            src=""
+            alt="Preview"
+          />
+          <h2>DUNE SAND</h2>
+        </div>
+        <div
+          class="image-preview-container"
+          id="imagePreviewContainer_1"
+          style="display: none"
+        >
+          <span class="close-button" onclick="closeImagePreview(1)">×</span>
+          <img
+            class="previewed-image"
+            id="previewedImage_1"
+            src=""
+            alt="Preview"
+          />
+          <h2>PINHOLE</h2>
+        </div>
+        <div
+          class="image-preview-container"
+          id="imagePreviewContainer_2"
+          style="display: none"
+        >
+          <span class="close-button" onclick="closeImagePreview(2)">×</span>
+          <img
+            class="previewed-image"
+            id="previewedImage_2"
+            src=""
+            alt="Preview"
+          />
+          <h2>FINE FISSURED</h2>
+        </div>
+
+        <div class="container">
+          <div class="ceiling-flex-container" data-aos="fade-up">
+            <div class="ceiling-card">
+              <div class="card-shadow"></div>
+              <img src="img/c-1-4.png" alt="" class="clickable-image" />
+              <p class="text-danger"><strong>DUNE SAND</strong></p>
+            </div>
+
+            <div class="ceiling-card">
+              <div class="card-shadow"></div>
+              <img src="img/c2.png" alt="" class="clickable-image" />
+              <p class="text-danger"><strong>PINHOLE</strong></p>
+            </div>
+
+            <div class="ceiling-card">
+              <div class="card-shadow"></div>
+              <img src="img/c3.png" alt="" class="clickable-image" />
+              <p class="text-danger"><strong>FINE FISSURED</strong></p>
+            </div>
+          </div>
+
+          <div class="celing-title mt-4" data-aos="slide-right">
+            <h2>ACCOUTIC BOARDS</h2>
+            <p>
+              <strong>Dimension:</strong> 2 ft x 4 ft English | 2 ft x 2ft 610 x
+              610
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gypsum" id="gypsum">
+        <div class="gyp-content">
+          <h2 data-aos="slide-right">GYPSUM BOARD</h2>
+          <div  data-aos="slide-right">
+            <span
+              ><strong>Thickness: </strong> 1/4" (6.4 mm), 3/8" (9.5 mm), 1/2"
+              (12.7 mm)
+            </span>
+            <br />
+            <span
+              ><strong>Widths: </strong> 4' (1220 mm) standard; 54" (1370
+              mm)</span
+            ><br />
+            <span
+              ><strong>Lengths: </strong> 8' to 12' (2440 to 3660 mm)
+              standard.</span
+            >
+          </div>
+          <div class="gyp-content-img"  data-aos="slide-right">
+            <div class="gyp-card">
+              <img src="img/gyp-1.png" alt="" />
+              <p>FIRE RESISTANT</p>
+            </div>
+
+            <div class="gyp-card">
+              <img src="img/gyp-2.png" alt="" />
+              <p>WET RESISTANT</p>
+            </div>
+
+            <div class="gyp-card">
+              <img src="img/gyp-3.png" alt="" />
+              <p>WET AND FIRE RESISTANT</p>
+            </div>
+          </div>
+          <h2 data-aos="slide-right">LAMINATED</h2>
+          <div class="gyp-content-img"  data-aos="slide-right">
+            <div class="gyp-card">
+              <img src="img/gyp-4.png" alt="" />
+              <p>PLAIN</p>
+            </div>
+
+            <div class="gyp-card">
+              <img src="img/gyp-5.png" alt="" />
+              <p>LEMON SKIN</p>
+            </div>
+
+            <div class="gyp-card">
+              <img src="img/gyp-6.png" alt="" />
+              <p>ORANGE SKIN</p>
+            </div>
+
+            <div class="gyp-card">
+              <img src="img/gyp-7.png" alt="" />
+              <p>DECORATIVE SKIN</p>
+            </div>
+          </div>
+        </div>
+        <div class="gyp-img"  data-aos="fade-up">
+          <img src="img/gypsum-bg.png" alt="" />
+        </div>
+        <div id="gyp-img" data-aos="fade-up">
+          <img src="img/gyp-8.png" alt="" >
+          <p>ORDINARY</p>
+        </div>
+      </section>
+
+      <section class="pvc" id="pvc">
+        <div class="container">
+          <div class="pvc-img-container mt-3 mb-5" data-aos="fade-up">
+            <div class="pvc-img-card">
+              <img src="img/pvc-1.png" alt="" />
+              <p class="text-danger"><strong>MATTE WHITE</strong></p>
+            </div>
+
+            <div class="pvc-img-card">
+              <img src="img/pvc-2.png" alt="" />
+              <p class="text-danger"><strong>BROWN OAK</strong></p>
+            </div>
+
+            <div class="pvc-img-card">
+              <img src="img/pvc-3.png" alt="" />
+              <p class="text-danger"><strong>AFRICAN RED OAK</strong></p>
+            </div>
+
+            <div class="pvc-img-card">
+              <img src="img/pvc-4.png" alt="" />
+              <p class="text-danger"><strong>MANDSHURICA</strong></p>
+            </div>
+          </div>
+
+          <div class="pvc-title" data-aos="slide-right">
+            <h2>PVC CEILING</h2>
+            <div class="pvc-sub">
+              <p>PLASTIC VINYL COMPOSITE & ALLUMINUM</p>
+              <span><strong>DIMENSION</strong>: 7 INCHES X 10FT</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="microbal" class="microbal" data-aos="fade-up">
+        <div class="micro-title" data-aos="slide-right">
+          <h2>ANTIMICROBAL CEILING</h2>
+          <span><strong>DIMENSION: </strong>600MM X 600M \ 1200MM X 600MM</span>
+        </div>
+        <div class="micro-img-container" data-aos="fade-up">
+          <div class="micro-box m-box1"></div>
+          <div class="micro-box m-box2"></div>
+          <img src="img/microbal.png" alt="">
+        </div>
+      </section>
+
+      <section class="pvc" id="buffle">
+        <div class="container">
+          <div class="pvc-img-container mt-3 mb-5" data-aos="fade-up">
+            <div class="pvc-img-card">
+              <img src="img/b-1.png" alt="" />
+              <p class="text-danger"><strong>O-BAFFLE</strong></p>
+            </div>
+
+            <div class="pvc-img-card">
+              <img src="img/b-2.png" alt="" />
+              <p class="text-danger"><strong>EXTRUDED BAFFLE</strong></p>
+            </div>
+
+            <div class="pvc-img-card">
+              <img src="img/b-3.png" alt="" />
+              <p class="text-danger"><strong>V-BAFFLE</strong></p>
+            </div>
+
+            <div class="pvc-img-card">
+              <img src="img/b-4.png" alt="" />
+              <p class="text-danger"><strong>U-BAFFLE</strong></p>
+            </div>
+          </div>
+
+          <div class="pvc-title" data-aos="slide-right">
+            <h2>BAFFLE CEILING</h2>
+            <div class="pvc-sub">
+              <span><strong>DIMENSION</strong>: length from 600 mm up to 4000 mm</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer id="links">
+      <div
+        class="links-container d-md-flex align-items-start justify-content-start"
+      >
+        <div class="navigations-links">
+          <p class="text-light">Navigation links</p>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#">Products</a>
+            </li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="socmed">
+          <p class="text-light">Social Media</p>
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/vision.intlconstruction"
+                target="_blank"
+                ><box-icon
+                  name="facebook-circle"
+                  type="logo"
+                  color="white"
+                ></box-icon>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.instagram.com/visionintlconstruct/"
+                target="_blank"
+                ><box-icon
+                  name="instagram-alt"
+                  type="logo"
+                  color="white"
+                ></box-icon
+              ></a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/@VisionIntlCons" target="_blank"
+                ><box-icon name="youtube" type="logo" color="white"></box-icon
+              ></a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.tiktok.com/@visioninternationalcons?lang=en"
+                target="_blank"
+                ><box-icon name="tiktok" type="logo" color="white"></box-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- owl js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <!-- swiper cdn js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!-- AOS cdn js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

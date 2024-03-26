@@ -1,0 +1,284 @@
+.ceiling {
+  padding: 50px 0;
+  background-color: #e5e5e5;
+}
+
+.ceiling .ceiling-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/* preview image by clcik */
+.image-preview-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 99999;
+}
+
+.image-preview-container .previewed-image {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-preview-container h2 {
+  text-align: center;
+  background-color: red;
+  width: 350px;
+  margin: 0 auto;
+  padding: 10px;
+  font-style: italic;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.previewed-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.close-button {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 100%;
+  /* border: 1px solid #fff; */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.close-button:hover {
+  background-color: red;
+}
+
+/* img and its shadows size */
+
+.ceiling .ceiling-flex-container .ceiling-card img {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  /* border: 1px solid #000; */
+  transition: all 0.3s ease-in;
+}
+
+.ceiling .ceiling-flex-container .ceiling-card img:hover {
+  transform: translate(-5px, -5px);
+  cursor: pointer;
+  filter: brightness(60%) saturate(120%) sepia(20%) hue-rotate(200deg);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.ceiling .ceiling-flex-container .ceiling-card {
+  /* border: 1px solid #000; */
+  width: 330px;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* overflow: hidden; */
+  row-gap: 20px;
+  animation: bounce 3s ease infinite;
+}
+
+.ceiling .ceiling-flex-container .ceiling-card .card-shadow {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* border: 1px solid #000; */
+  top: 15px;
+  right: 30px;
+}
+
+.ceiling .celing-title h2,
+.pvc .pvc-title h2,
+.gypsum h2,
+.micro-title h2 {
+  background-color: red;
+  width: 350px;
+  padding: 10px;
+  font-style: italic;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+}
+
+/* pvc */
+.pvc {
+  padding: 50px;
+  background-color: #e5e5e5;
+}
+
+.pvc img {
+  width: 200px;
+  height: auto;
+}
+
+.pvc-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+}
+
+.pvc-img-container .pvc-img-card {
+  /* border: 1px solid #000; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: bounce 3s ease infinite;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+  background-color: #Fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* gypsum */
+.gypsum {
+  padding: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  column-gap: 50px;
+  position: relative;
+}
+
+
+
+.gyp-content {
+  flex-grow: 1;
+}
+
+.gyp-content .gyp-content-img img {
+  width: 150px;
+  height: auto;
+}
+
+.gyp-content .gyp-content-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 1px solid #000; */
+  margin: 30px 0;
+}
+.gyp-content .gyp-content-img .gyp-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#gyp-img{
+  position: absolute;
+  right: 30%;
+  bottom: 30%;
+  text-align: center;
+}
+
+#gyp-img img{
+  width: 230px;
+  height: auto;
+}
+#gyp-img p{
+  position: relative;
+  top: -50px;
+}
+/* ANTIMICROBAL CEILING */
+.microbal {
+  background: rgba(0, 0, 0, 0.1) url("/img/microbal-bg.png") no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.microbal .micro-title {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+
+.microbal .micro-title h2 {
+  width: 500px !important;
+  text-align: left;
+}
+
+.microbal .micro-img-container img {
+  width: 220px;
+  height: auto;
+  position: relative;
+  z-index: 3;
+  transition: transform 0.8s ease;
+}
+
+.microbal .micro-img-container {
+  position: absolute;
+  right: 100px;
+  bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.microbal .micro-img-container .micro-box {
+  /* border: 1px solid #000; */
+  height: 350px;
+  width: 350px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.microbal .micro-img-container img:hover {
+  transform: rotate(45deg);
+}
+
+.microbal .micro-img-container .m-box1 {
+  width: 340px;
+  height: 340px;
+  border-radius: 100%;
+  background-color: #e5e5e5;
+  z-index: 2;
+}
+
+
+/* buffle */
+#b-sub{
+  position: relative;
+  top: 50px !important;
+  left: 2000px;
+}
